@@ -1,0 +1,18 @@
+{
+  "rounds": 1,
+  "fixes": [],
+  "tests": {
+    "ran": 724,
+    "passed": 721,
+    "failed": 1,
+    "skipped": 2,
+    "command": "python3 -m pytest -q -p no:cacheprovider tests"
+  },
+  "failures": [
+    {
+      "test": "tests/oauth1/rfc5849/test_signatures.py::SignatureTests::test_rsa_bad_keys",
+      "error": "ValueError: ('Could not deserialize key data. The data may be in an incorrect format, it may be encrypted with an unsupported algorithm, or it may be an unsupported key type (e.g. EC curves with explicit parameters).', [<OpenSSLError(code=75497580, lib=9, reason=108, reason_text=no start line)>])",
+      "unrelated": true
+    }
+  ]
+}
