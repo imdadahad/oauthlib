@@ -1,0 +1,9 @@
+{
+  "changed": [
+    {"file": "oauthlib/common.py", "line": 203, "note": "datetime.datetime.utcnow() -> datetime.datetime.now(datetime.timezone.utc) in generate_signed_token; value is used as the base for the 'exp' claim passed to jwt.encode"}
+  ],
+  "skipped": [],
+  "guesses": [
+    {"file": "oauthlib/common.py", "line": 203, "assumed": "The 'exp' claim is consumed only by PyJWT jwt.encode, which converts datetime claims via utctimetuple(); this yields the same epoch value for an aware UTC datetime as for the previous naive UTC one, so no consumer line needed changes. No in-repo consumer compares this value."}
+  ]
+}
