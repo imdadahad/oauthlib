@@ -1,0 +1,11 @@
+{
+  "changed": [
+    {
+      "file": "oauthlib/common.py",
+      "line": 203,
+      "note": "generate_signed_token JWT exp claim base time; datetime imported as module at line 9"
+    }
+  ],
+  "skipped": [],
+  "guesses": []
+}
